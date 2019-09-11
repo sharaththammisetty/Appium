@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestSuite" verbose="1">
+	<listeners>
+		<listener
+			class-name="com.seneca.appiumassessment.flipkart.listeners.TestListener" />
+	</listeners>
+	<test name="RegressionTests">
+		<classes>
+			<class name="com.seneca.appiumassessment.flipkart.tests.WebViewTest">
+			</class>
+			<class name="com.seneca.appiumassessment.flipkart.tests.NotificationsTest">
+			</class>
+			<class name="com.seneca.appiumassessment.flipkart.tests.LoginTest"></class>
+			<class
+				name="com.seneca.appiumassessment.flipkart.tests.InternetConnectionTest">
+			</class>
+			<class
+				name="com.seneca.appiumassessment.flipkart.tests.SeachandComparePageTests"></class>
+			<class
+				name="com.seneca.appiumassessment.flipkart.tests.AddItemToCartPageTest">
+			</class>
+			<class name="com.seneca.appiumassessment.flipkart.tests.SwipeActionTest">
+			</class> 
+		</classes>
+	</test>
+</suite>

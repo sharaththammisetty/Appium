@@ -1,0 +1,11 @@
+1.Automate Login 
+2. Automate Forgot PIN
+3.Native functionalities of all buttons
+4.Sliding Options and their navigation
+5.Search Product and Add to Cart
+6.Menu Options [Login, Wishlist, search, cart and home navigation]
+7.Add to cart functionality validation
+8.Product details verification [at least one/two products]-Done
+9.Check and open notifications
+10.   Internet Connectivity check on each page
+11.Cover all elements in respective menus

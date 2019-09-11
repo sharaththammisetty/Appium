@@ -1,0 +1,27 @@
+WEB VIEW
+
+HomeTestObject.facebookIcon.click();
+		Thread.sleep(3000);
+		HomeTestObject.justonce_link.click();
+		Thread.sleep(20000);
+		HomeTestObject.LIKE_btn.click();
+		driver.navigate().back();
+		Thread.sleep(3000);
+		verifyElement(HomeTestObject.facebookIcon);
+		
+		
+	
+Open Notifications
+public void ReadOtp() throws InterruptedException{
+		((AndroidDriver<MobileElement>) driver).openNotifications();
+		
+		Thread.sleep(15000);
+		System.out.println(RegisterTestObject.msg_Title.getText());
+		if(RegisterTestObject.msg_Title.getText().contains("VK-IPAYTM"))
+		{
+			String Text = RegisterTestObject.msg_Text.getText();
+			String Otp = Text.replaceAll("\\D+","");
+			System.out.println(Otp);
+			driver.navigate().back();
+			verifyAlert(Otp, RegisterTestObject.editOtp.getText());
+		}	
